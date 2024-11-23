@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Schiebe's Honorary Rules of Literature</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+        :root {
+            --primary: #6d28d9;
+            --secondary: #4c1d95;
+            --accent: #7c3aed;
+            --text: #f3f4f6;
+            --background: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.8);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        body {
+            background: var(--background);
+            color: var(--text);
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 20% 20%, rgba(124, 58, 237, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(109, 40, 217, 0.15) 0%, transparent 50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 2rem;
+            background: var(--card-bg);
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(124, 58, 237, 0.2);
+            box-shadow: 0 0 40px rgba(124, 58, 237, 0.1);
+            animation: sceneAppear 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes sceneAppear {
+            0% { opacity: 0; transform: translateY(30px) scale(0.95); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #a78bfa;
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            border-radius: 15px;
+            background: rgba(124, 58, 237, 0.1);
+            border-left: 4px solid var(--accent);
+        }
+
+        ul {
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        li i {
+            color: var(--accent);
+        }
+
+        .back-button {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .button {
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border: none;
+            border-radius: 50px;
+            color: var(--text);
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(124, 58, 237, 0.2);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mr. Schiebe's Oath of Literary Absurdity</h1>
+        <div class="quote">
+            <i class="fas fa-quote-left"></i>
+            "This is not just a class. This is an odyssey through the labyrinth of metaphors, where every comma hides a secret and every typo has deep emotional significance."
+        </div>
+        <p>By crossing the threshold of Honors English, you hereby swear to uphold the sacred and completely unnecessary traditions of overanalyzing everything you read, see, and occasionally dream about.</p>
+        <p>Your unbreakable vows include but are not limited to:</p>
+        <ul>
+            <li><i class="fas fa-check"></i> Assuming every story about a dog is secretly about the futility of life, and every story about life is secretly about a dog.</li>
+            <li><i class="fas fa-check"></i> Reacting to even the mildest literary revelations as if you've just discovered the secret to immortality: *"Wait... the curtains were blue because he was SAD?!"*</li>
+            <li><i class="fas fa-check"></i> Writing essays with titles like *"How a Single Raisin in Chapter Three Represents the Crushing Weight of Capitalism"*, because why not?</li>
+            <li><i class="fas fa-check"></i> Laughing at jokes like, *"Why did the comma break up with the period? It felt too possessive!"* with the gusto of someone who actually finds that funny.</li>
+            <li><i class="fas fa-check"></i> Accepting that the phrase "symbolic death" will now haunt your nightmares forever. (Spoiler: It’s always a symbolic death.)</li>
+            <li><i class="fas fa-check"></i> Discussing whether the protagonist is relatable as if their entire fictional existence depends on your validation.</li>
+        </ul>
+        <p>In conclusion, remember this: if you fail to analyze every minor detail in life as deeply as you do in this class, Mr. Schiebe may *politely* suggest that you spend eternity explaining the "deeper meaning" of why grocery store aisles are organized the way they are. (Hint: it's society.)</p>
+        <div class="back-button">
+            <a href="index.html" class="button"><i class="fas fa-arrow-left"></i> Return to Mystery</a>
+        </div>
+    </div>
+</body>
+</html>
